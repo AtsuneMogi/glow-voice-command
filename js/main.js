@@ -23,7 +23,7 @@ function main() {
         var results = e.results;
         for (var i = e.resultIndex; i < results.length; i++) {
             var result = results[i][0].transcript;
-            if ((result == "on") || (result == "off")){
+            if ((result == "one") || (result == "1") || (result == "zero") || (result == "0")) {
                 content.textContent = result;
                 main();
             }
@@ -39,5 +39,3 @@ function main() {
     speeching = 0;
     speech.start();
 }
-
-
