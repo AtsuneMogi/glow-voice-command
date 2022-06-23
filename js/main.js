@@ -23,7 +23,7 @@ function main() {
         var results = e.results;
         for (var i = e.resultIndex; i < results.length; i++) {
             var result = results[i][0].transcript;
-            if ((result == "one") || (result == "1") || (result == "zero") || (result == "0")) {
+            if ((result == "yes") || (result == "no")) {
                 content.textContent = result;
                 main();
             }
