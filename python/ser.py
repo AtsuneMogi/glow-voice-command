@@ -39,10 +39,10 @@ def glowOff():
 def getContent():
   element = driver.find_element(By.ID, "content")
   text = element.text
-  if (text == "one") or (text == "1"):
+  if (text == "yes"):
     print(text)
     glowOn()
-  elif (text == "zero") or (text == "0"):
+  elif (text == "no"):
     print(text)
     glowOff()
 
