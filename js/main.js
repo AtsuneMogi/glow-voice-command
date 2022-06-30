@@ -23,15 +23,11 @@ function main() {
         var results = e.results;
         for (var i = e.resultIndex; i < results.length; i++) {
             var result = results[i][0].transcript;
-            if ((result == "yes") || (result == "no")) {
+            if (results[i].isFinal) {
                 content.textContent = result;
                 main();
-            }
-            else if (results[i].isFinal) {
-                console.log(result);
-                main();
             } else {
-                console.log(result);
+                content.textContent = result;
                 speeching = 1;
             }
         }
