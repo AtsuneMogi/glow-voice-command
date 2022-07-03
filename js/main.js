@@ -4,7 +4,7 @@ const content = document.getElementById("content");
 function main() {
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     var speech = new SpeechRecognition();
-    speech.lang = "en-US";
+    speech.lang = "";
     speech.interimResults = true;
     speech.continuous = true;
 
